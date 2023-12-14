@@ -22,7 +22,7 @@ ADMIN_PASS=<Write the independent background password here, do not tell others>
 
 Then use [Multiple Files](https://docs.docker.com/compose/extends/#understanding-multiple-compose-files) to start the application:
 ```bash
-docker compose -f docker-compose.yml -f admin.yml up -d
+docker-compose -f docker-compose.yml -f admin.yml up -d
 ```
 
 *Pay attention to the order, because `admin.yml` depends on `docker-compose.yml`, so it should be placed behind*
